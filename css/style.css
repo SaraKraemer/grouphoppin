@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Bungee+Shade|Mrs+Sheppards|Poppins|Rock+Salt|Sedgwick+Ave+Display');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+/*Nav Begin*/
+nav{
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+ul {
+  background-color: transparent;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1%;
+}
+
+
+li a{
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropcontent{
+  background-color: black; 
+}
+
+.dropdown .dropcontent {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  display: none;
+}
+
+.dropdown .dropcontent li a{
+  display: block;
+  float: left;
+  text-align: left;
+  margin: 0;
+}
+
+.dropdown:hover .dropcontent {
+  display: block;
+}
+
+/*Nav ends*/
+
+
+/*Body section begins*/
+
+.herosection {
+  background-image: url('../images/subwayhero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+.hoppinaround{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 6em;
+  margin-top: 35%;
+  margin-bottom: 10%;
+}
+
+.aroundabout{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-bottom: 50%;
+}
+
+
+h1~p{
+  font-size: 3em;
+}
+
+h1~p a{
+  text-decoration: none;
+  color: white;
+}
+
+.manhattan{
+  font-family: 'Limelight', cursive;
+}
+
+.manhattan a:hover{
+  color:#277bdd;
+}
+
+.queens{
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.queens a:hover{
+  color:#f8798f;
+}
+
+.thebronx{
+  font-family: 'Bungee Shade', cursive;
+}
+
+.thebronx a:hover{
+  color:#be1e1e;
+}
+
+.statenisland{
+  font-family: 'Mrs Sheppards', cursive;
+}
+
+.statenisland a:hover{
+  color:#ef620b;
+}
+
+.brooklyn{
+  font-family: 'Rock Salt', cursive;
+}
+
+.brooklyn a:hover{
+  color: #ffc400;
+}
+
+/*About Us Start*/
+.aboutheroimg{
+  background-image: linear-gradient(rgba(119, 119, 119, 0.24),rgba(0, 0, 0, 0.5)), url('../images/aboutushero.jpg');
+}
+
+.aboutherotxt {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+/*About Us End*/
+
+
+/*Manhattan Borough Start*/
+.mheroimg{
+  background-image: url('../images/hhero.jpg');
+}
+
+.mherotxt {
+  font-family: 'Limelight', cursive;
+}
+/*Manhattan Borough End*/
+
+
+/*Queens Borough Start*/
+.qheroimg{
+  background-image: linear-gradient(rgba(214, 214, 214, 0.24),rgba(0, 0, 0, 0.5)), url('../images/qhero.jpg');
+}
+
+.qherotxt {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+/*Queens Borough End*/
+
+
+/*Bronx Borough Start*/
+.bxheroimg{
+  background-image: linear-gradient(rgba(119, 119, 119, 0.24),rgba(0, 0, 0, 0.5)), url('../images/bxhero.jpg');
+}
+
+.bxherotxt {
+  font-family: 'Bungee Shade', cursive;
+}
+/*Bronx Borough End*/
+
+
+/*Staten Island Borough Start*/
+.siheroimg{
+  background-image: url('../images/sihero.jpg');
+}
+
+.siherotxt {
+  font-family: 'Mrs Sheppards', cursive;
+}
+/*Staten Island Borough End*/
+
+
+/*Brooklyn Borough Start*/
+.brheroimg{
+  background-image: linear-gradient(rgba(119, 119, 119, 0.24),rgba(0, 0, 0, 0.5)), url('../images/brhero.jpg');
+}
+
+.brherotxt {
+  font-family: 'Rock Salt', cursive;
+}
+/*Brooklyn Borough End*/
+
+.aboutheroimg, .mheroimg, .qheroimg, .bxheroimg, .siheroimg, .brheroimg {
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutherotxt, .qherotxt, .siherotxt {
+  font-size: 9em;
+  margin-top: 0;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.mherotxt, .bxherotxt, .brherotxt  {
+  font-size: 7em;
+  margin-top: 0;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.subtxt {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
+
+.review{
+  margin-top: 10%;
+
+}
+
+.bodyimg, .bodytxt{
+  padding: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodytxt{
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+
+}
+
+/*Ratings Section*/
+.rating {
+  padding: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.ratingtxt{
+  font-family: 'Poppins', sans-serif;
+}
+
+footer{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 1%;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
